@@ -1,0 +1,17 @@
+{
+  "name": "Aryan Shukla Portfolio",
+  "short_name": "Aryan Shukla",
+  "description": "Systems, AI & Software Engineer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

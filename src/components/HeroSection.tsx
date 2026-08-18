@@ -94,24 +94,32 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
               Hi, I’m <strong className="text-white font-semibold">Aryan Shukla</strong>. Computer engineering student at DBIT Mumbai building local-first software, custom data visualizers, AST parsers, and full-stack backend caching systems.
             </motion.p>
 
-            {/* CTAs */}
+            {/* Above-the-fold CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-wrap items-center gap-4 pt-2"
+              className="flex flex-wrap items-center gap-3.5 pt-2"
             >
               <a
                 href="#projects"
-                className="group flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 hover:from-cyan-400 hover:to-indigo-500 transition-all hover:scale-[1.02] active:scale-95"
+                className="group flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/25 hover:from-cyan-400 hover:to-indigo-500 transition-all hover:scale-[1.02] active:scale-95"
               >
                 <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
 
+              <a
+                href="#contact"
+                className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 hover:text-white hover:bg-emerald-500/20 text-sm font-semibold transition-all active:scale-95"
+              >
+                <Mail className="w-4 h-4 text-emerald-400" />
+                <span>Get in Touch</span>
+              </a>
+
               <button
                 onClick={onOpenResume}
-                className="px-5 py-3.5 rounded-xl bg-slate-900/60 border border-white/10 text-slate-300 hover:text-white hover:bg-white/5 text-sm font-medium transition-all"
+                className="px-5 py-3.5 rounded-xl bg-slate-900/80 border border-white/10 text-slate-300 hover:text-white hover:bg-white/10 text-sm font-medium transition-all active:scale-95"
               >
                 View Resume Sheet
               </button>
